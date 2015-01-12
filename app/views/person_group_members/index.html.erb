@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Person Group Members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person group</th>
+      <th>Person</th>
+      <th>Active date</th>
+      <th>Inactive date</th>
+      <th>Created by</th>
+      <th>Created at</th>
+      <th>Updated by</th>
+      <th>Updated at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @person_group_members.each do |person_group_member| %>
+      <tr>
+        <td><%= person_group_member.person_group_id %></td>
+        <td><%= person_group_member.person_id %></td>
+        <td><%= person_group_member.active_date %></td>
+        <td><%= person_group_member.inactive_date %></td>
+        <td><%= person_group_member.created_by %></td>
+        <td><%= person_group_member.created_at %></td>
+        <td><%= person_group_member.updated_by %></td>
+        <td><%= person_group_member.updated_at %></td>
+        <td><%= link_to 'Show', person_group_member %></td>
+        <td><%= link_to 'Edit', edit_person_group_member_path(person_group_member) %></td>
+        <td><%= link_to 'Destroy', person_group_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Person group member', new_person_group_member_path %>

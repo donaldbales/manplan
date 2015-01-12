@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_id: 1
+  person_id: 1
+  primary: 1
+  active_date: 2015-01-11 19:50:13
+  inactive_date: 2015-01-11 19:50:13
+  created_by: MyString
+  created_at: 2015-01-11 19:50:13
+  updated_by: MyString
+  updated_at: 2015-01-11 19:50:13
+
+two:
+  project_id: 1
+  person_id: 1
+  primary: 1
+  active_date: 2015-01-11 19:50:13
+  inactive_date: 2015-01-11 19:50:13
+  created_by: MyString
+  created_at: 2015-01-11 19:50:13
+  updated_by: MyString
+  updated_at: 2015-01-11 19:50:13

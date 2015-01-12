@@ -1,0 +1,57 @@
+<%= form_for(@time_unit_type) do |f| %>
+  <% if @time_unit_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@time_unit_type.errors.count, "error") %> prohibited this time_unit_type from being saved:</h2>
+
+      <ul>
+      <% @time_unit_type.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :equivalent_hours %><br>
+    <%= f.text_field :equivalent_hours %>
+  </div>
+  <div class="field">
+    <%= f.label :active_date %><br>
+    <%= f.datetime_select :active_date %>
+  </div>
+  <div class="field">
+    <%= f.label :inactive_date %><br>
+    <%= f.datetime_select :inactive_date %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br>
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br>
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br>
+    <%= f.datetime_select :updated_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

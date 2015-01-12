@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @time_unit_type.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @time_unit_type.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @time_unit_type.url %>
+</p>
+
+<p>
+  <strong>Equivalent hours:</strong>
+  <%= @time_unit_type.equivalent_hours %>
+</p>
+
+<p>
+  <strong>Active date:</strong>
+  <%= @time_unit_type.active_date %>
+</p>
+
+<p>
+  <strong>Inactive date:</strong>
+  <%= @time_unit_type.inactive_date %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @time_unit_type.created_by %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @time_unit_type.created_at %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @time_unit_type.updated_by %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @time_unit_type.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_time_unit_type_path(@time_unit_type) %> |
+<%= link_to 'Back', time_unit_types_path %>

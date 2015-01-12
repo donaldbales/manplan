@@ -1,0 +1,3 @@
+sudo -u manplan psql -f `pwd`/person_group_members.fks
+sudo -u manplan psql -f `pwd`/project_managers.fks
+sudo -u manplan psql -f `pwd`/project_person_estimates.fks

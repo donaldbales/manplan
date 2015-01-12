@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Project Person Estimates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Person</th>
+      <th>Time amount</th>
+      <th>Time unit type</th>
+      <th>Active date</th>
+      <th>Inactive date</th>
+      <th>Created by</th>
+      <th>Created at</th>
+      <th>Updated by</th>
+      <th>Updated at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @project_person_estimates.each do |project_person_estimate| %>
+      <tr>
+        <td><%= project_person_estimate.project_id %></td>
+        <td><%= project_person_estimate.person_id %></td>
+        <td><%= project_person_estimate.time_amount %></td>
+        <td><%= project_person_estimate.time_unit_type_id %></td>
+        <td><%= project_person_estimate.active_date %></td>
+        <td><%= project_person_estimate.inactive_date %></td>
+        <td><%= project_person_estimate.created_by %></td>
+        <td><%= project_person_estimate.created_at %></td>
+        <td><%= project_person_estimate.updated_by %></td>
+        <td><%= project_person_estimate.updated_at %></td>
+        <td><%= link_to 'Show', project_person_estimate %></td>
+        <td><%= link_to 'Edit', edit_project_person_estimate_path(project_person_estimate) %></td>
+        <td><%= link_to 'Destroy', project_person_estimate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project person estimate', new_project_person_estimate_path %>

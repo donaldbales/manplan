@@ -1,0 +1,26 @@
+rails generate scaffold project code:string description:string url:string active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime
+
+rake db:migrate RAILS_ENV=development 
+
+rails generate scaffold time_unit_type code:string description:string url:string equivalent_hours:decimal active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime
+
+rake db:migrate RAILS_ENV=development 
+
+rails generate scaffold person_group code:string description:string url:string active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime
+
+rake db:migrate RAILS_ENV=development 
+
+rails generate scaffold person code:string description:string userid:string active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime
+
+rake db:migrate RAILS_ENV=development 
+
+rails generate scaffold person_group_members person_group_id:integer person_id:integer active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime --force
+
+rake db:migrate RAILS_ENV=development 
+
+rails generate scaffold project_managers project_id:integer person_id:integer primary:integer active_date:datetime inactive_date:datetime created_by:string created_at:datetime updated_by:string updated_at:datetime --force
+
+
+rake db:migrate RAILS_ENV=development 
+
+

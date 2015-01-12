@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person group:</strong>
+  <%= @person_group_member.person_group_id %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @person_group_member.person_id %>
+</p>
+
+<p>
+  <strong>Active date:</strong>
+  <%= @person_group_member.active_date %>
+</p>
+
+<p>
+  <strong>Inactive date:</strong>
+  <%= @person_group_member.inactive_date %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @person_group_member.created_by %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @person_group_member.created_at %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @person_group_member.updated_by %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @person_group_member.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_person_group_member_path(@person_group_member) %> |
+<%= link_to 'Back', person_group_members_path %>

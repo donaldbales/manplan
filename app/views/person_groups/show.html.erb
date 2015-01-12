@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @person_group.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @person_group.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @person_group.url %>
+</p>
+
+<p>
+  <strong>Active date:</strong>
+  <%= @person_group.active_date %>
+</p>
+
+<p>
+  <strong>Inactive date:</strong>
+  <%= @person_group.inactive_date %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @person_group.created_by %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @person_group.created_at %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @person_group.updated_by %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @person_group.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_person_group_path(@person_group) %> |
+<%= link_to 'Back', person_groups_path %>

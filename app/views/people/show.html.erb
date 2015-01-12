@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @person.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @person.description %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @person.userid %>
+</p>
+
+<p>
+  <strong>Active date:</strong>
+  <%= @person.active_date %>
+</p>
+
+<p>
+  <strong>Inactive date:</strong>
+  <%= @person.inactive_date %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @person.created_by %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @person.created_at %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @person.updated_by %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @person.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
