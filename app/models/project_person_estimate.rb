@@ -1,2 +1,2 @@
-class ProjectPersonEstimate < ActiveRecord::Base
+class ProjectPersonEstimate < ManplanRecord
 end

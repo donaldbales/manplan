@@ -25,25 +25,5 @@
   <%= @person.inactive_date %>
 </p>
 
-<p>
-  <strong>Created by:</strong>
-  <%= @person.created_by %>
-</p>
-
-<p>
-  <strong>Created at:</strong>
-  <%= @person.created_at %>
-</p>
-
-<p>
-  <strong>Updated by:</strong>
-  <%= @person.updated_by %>
-</p>
-
-<p>
-  <strong>Updated at:</strong>
-  <%= @person.updated_at %>
-</p>
-
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>

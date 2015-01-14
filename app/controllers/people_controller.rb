@@ -1,4 +1,6 @@
 class PeopleController < ApplicationController
+  require 'manplan_record'
+
   before_action :set_person, only: [:show, :edit, :update, :destroy]
 
   # GET /people
@@ -15,6 +17,8 @@ class PeopleController < ApplicationController
   # GET /people/new
   def new
     @person = Person.new
+    @person.inactive_date = Time.strptime('9999-12-31T23:59:59', '%Y-%m-%dT%H:%M:%S')
+    #@person.inactive_date = Time.strptime('9999-12-31', '%Y-%m-%d')
   end
 
   # GET /people/1/edit

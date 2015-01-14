@@ -1,2 +1,2 @@
-class PersonGroup < ActiveRecord::Base
+class PersonGroup < ManplanRecord
 end

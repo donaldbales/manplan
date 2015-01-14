@@ -1,2 +1,2 @@
-class TimeUnitType < ActiveRecord::Base
+class TimeUnitType < ManplanRecord
 end

@@ -1,2 +1,2 @@
-class ProjectManager < ActiveRecord::Base
+class ProjectManager < ManplanRecord
 end
